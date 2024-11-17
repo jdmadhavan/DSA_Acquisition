@@ -48,15 +48,15 @@ public class TwoSumOfIndices {
         System.out.println(Arrays.toString(twoSumValue));
     }
 
-    public int[] twoSum(int[] nums,int target) {
+    public int[] twoSum(int[] numbers,int target) {
 
         int letftvale = 0;
-        int rightValue = nums.length - 1;
+        int rightValue = numbers.length - 1;
         while (letftvale < rightValue) {
-            if (nums[letftvale] + nums[rightValue] == target) {
+            if (numbers[letftvale] + numbers[rightValue] == target) {
                 return new int[]{letftvale+1, rightValue+1};
             }
-            else if (nums[letftvale] + nums[rightValue] > target) {
+            else if (numbers[letftvale] + numbers[rightValue] > target) {
                 rightValue--;
             }
             else {
