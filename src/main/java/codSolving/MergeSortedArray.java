@@ -30,7 +30,7 @@ public class MergeSortedArray {
                 p2--;
                 indexVal--;
             } else if (nums1[p1] > nums2[p2]) {
-                nums1[indexVal] = nums1[p1]New
+                nums1[indexVal] = nums1[p1];
                 p1--;
                 indexVal--;
             } else {
