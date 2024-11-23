@@ -1,8 +1,7 @@
-package codSolving;
+package pointersAndPrefix;
 
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MergeSortedArray {

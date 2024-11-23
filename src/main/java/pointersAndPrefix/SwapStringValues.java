@@ -1,4 +1,4 @@
-package codSolving;
+package pointersAndPrefix;
 
 import org.testng.annotations.Test;
 
