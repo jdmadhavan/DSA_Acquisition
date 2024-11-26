@@ -15,6 +15,13 @@ public class SumOfSubArrayISEqualToK {
         int numbers = sumOfSubArraySumIsEqual(inputArray,k);
         System.out.println(numbers);
     }
+    @Test
+    public  void Test2() {
+        int[] inpArray = {1,2,3};
+        int k =3;
+        int result = sumOfSubArraySumIsEqual(inpArray, k);
+        System.out.println(result);
+    }
 
 
 
@@ -25,11 +32,8 @@ public class SumOfSubArrayISEqualToK {
          map.put(0,1);
         for (int i = 0; i < nums.length; i++) {
           sum+=nums[i];
-          if(sum==k)
-          {
-              count++;
-          }
-          else if(map.containsKey(sum-k))
+
+          if(map.containsKey(sum-k))
           {
               count+=map.get(sum-k);
           }
