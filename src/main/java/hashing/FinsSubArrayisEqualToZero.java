@@ -7,6 +7,19 @@ import java.util.Map;
 
 public class FinsSubArrayisEqualToZero {
 
+/*
+1) Initialize the map  ==> key ,value (Integer,Integer),sum=0
+2) iterate the array from A[0] to A.length
+3)do the sum with array values sum+=arr[i]
+4)  if ==> map contains sum returns true
+    else  add the arr[i],1 into the map .
+ 5)  it not matching anything return false.
+
+edge case if array has 1 value.
+put default value [0,1]
+ */
+
+
     @Test
     public  void testOne() {
         int[] inputArray={4, 2, -3, 1, 6};
