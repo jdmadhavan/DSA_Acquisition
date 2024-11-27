@@ -8,6 +8,14 @@ import java.util.Map;
 public class SumOfSubArrayISEqualToK {
 
 
+/* Define HAshmap.
+Initialize it with Key 0 and value 1.
+iterate through the input array, calculate prefixSum and add the PREFIX SUM as key in the map and count as value.
+Before adding, find sum-k = index value,
+if index value is present in the map, add it to the result. increment counter value and put it in the map both if else cases using getdefault.
+ return result.
+ */
+
     @Test
     public  void testOne() {
         int[] inputArray={1,1,1};
