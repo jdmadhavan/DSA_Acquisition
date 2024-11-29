@@ -14,9 +14,9 @@ public class FindMissingNumber {
     3) Iterate the array value
           if(num[i]!=j)
           return j
+       else j++
 
-          else j++;
-    4) return j;
+    4)finally return j;
      */
 
     @Test
