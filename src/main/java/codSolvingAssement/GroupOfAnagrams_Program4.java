@@ -28,8 +28,8 @@ public class GroupOfAnagrams_Program4 {
     public void testOne()
     {
      String[] anagrm={"eat","tea","tan","ate","nat","bat"};
-        List<String> mylist = Arrays.asList(anagrm);
-        List<List<String>> lists = groupAnagrams(mylist);
+      /*  List<String> mylist = Arrays.asList(anagrm);*/
+        List<List<String>> lists = groupAnagrams(anagrm);
         System.out.println(lists);
     }
 
@@ -38,8 +38,8 @@ public class GroupOfAnagrams_Program4 {
     {
         String[] anagrm={"a"};
         List<String> mylist = Arrays.asList(anagrm);
-        List<List<String>> lists = groupAnagrams(mylist);
-        System.out.println(lists);
+        //List<List<String>> lists = groupAnagrams(mylist);
+        //System.out.println(lists);
     }
 
     @Test
@@ -47,16 +47,17 @@ public class GroupOfAnagrams_Program4 {
     {
         String[] anagrm={""};
         List<String> mylist = Arrays.asList(anagrm);
-        List<List<String>> lists = groupAnagrams(mylist);
-        System.out.println(lists);
+       // List<List<String>> lists = groupAnagrams(mylist);
+       // System.out.println(lists);
     }
 
-    public static List<List<String>> groupAnagrams(List<String> anagrams){
+    public static List<List<String>> groupAnagrams(String[] str){
 
+        List<String> mylist = Arrays.asList(str);
         HashMap<String, List<String>> map = new HashMap<>();
-        for (int i=0;i<anagrams.size();i++){
+        for (int i=0;i<mylist.size();i++){
             ArrayList<String> valueList = new ArrayList<>();
-            String eachStr = anagrams.get(i);
+            String eachStr = mylist.get(i);
             valueList.add(eachStr);
             int[] ascii= new int[26];
             for(int j=0;j<eachStr.length();j++){
@@ -72,8 +73,10 @@ public class GroupOfAnagrams_Program4 {
                 map.put(sortedKey, strings); // O(1)
             }
         }
-        Collection<List<String>> values = map.values(); // O(n)
-        return new ArrayList<>(values); //O(n)
+
+        ArrayList<List<String>> finallists = new ArrayList<>(map.values());
+        //Collection<List<String>> values = map.values();
+        return finallists;//O(n)
 
     }
 }
