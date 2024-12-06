@@ -21,6 +21,7 @@ public class NumSubarraysWithSum_BinarySubArray {
                result+=right-left+1;
 
      return result;
+https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/
 
      */
 
