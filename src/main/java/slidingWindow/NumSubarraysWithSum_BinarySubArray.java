@@ -29,11 +29,11 @@ https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
     @Test
     public void testOne()
     {
-        int[] nums={1,0,1,0,1};
-        int goal=2;
-        //int result = numSubarraysWithSum(nums, goal)-numSubarraysWithSum(nums, goal-1);
-        int result1 = numSubarraysWithSum1(nums, goal);
-        System.out.println(result1);
+        int[] nums={0,0,0,0,0};
+        int goal=0;
+        int result = numSubarraysWithSum(nums, goal)-numSubarraysWithSum(nums, goal-1);
+        //int result1 = numSubarraysWithSum1(nums, goal);
+        System.out.println(result);
     }
 
     private int numSubarraysWithSum1(int[] nums, int goal) {
