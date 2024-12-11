@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class SearchInsert {
     /*
-    Binary search:
+    Binary szlearch:
  i-p= {1,3,5,6}, target=5
  o/p = 2
 - initialise two pointers low=0, high=nums.length-1
