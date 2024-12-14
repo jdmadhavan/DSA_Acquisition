@@ -2,6 +2,8 @@ package binarySearch;
 
 import org.testng.annotations.Test;
 
+import java.util.HashSet;
+
 public class SearchTargetInrotatedarray {
     /*
 
@@ -47,9 +49,9 @@ return -1
 
     private boolean findtheTargetIndex(int[] nums, int target) {
         //4, 5, 6, 7, 0, 1, 2
-        int result = -1, low = 0, high = nums.length - 1, mid = 0;
+        int low = 0, high = nums.length - 1;
         while (low <= high) {
-            mid = (low + high) / 2;
+           int mid = (low + high) / 2;
             if (nums[mid] == target) {
                 return true;
             }
