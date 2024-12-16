@@ -12,10 +12,8 @@ public class MergeSort {
     public void testOne() {
 
         int nums[] = {5, 3, 1, 4, 2};
-          mergeSort(nums);
+        mergeSort(nums);
         System.out.println(Arrays.toString(nums));
-
-
 
 
     }
@@ -43,19 +41,19 @@ public class MergeSort {
         int p1 = 0, p2 = 0, index = low;
 
         int[] left = Arrays.copyOfRange(nums, low, mid + 1);
-        int[] right = Arrays.copyOfRange(nums,mid+1, high+1);
+        int[] right = Arrays.copyOfRange(nums, mid + 1, high + 1);
         while (p1 < left.length && p2 < right.length) {
             if (left[p1] <= right[p2]) {
                 nums[index++] = left[p1++];
             } else
                 nums[index++] = right[p2++];
-            }
-            while (p1 < left.length) {
-                nums[index++] = left[p1++];
-            }
-            while (p2 < right.length) {
-                nums[index++] = right[p2++];
-            }
+        }
+        while (p1 < left.length) {
+            nums[index++] = left[p1++];
+        }
+        while (p2 < right.length) {
+            nums[index++] = right[p2++];
+        }
 
     }
 }
