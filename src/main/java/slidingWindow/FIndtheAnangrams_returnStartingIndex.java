@@ -58,8 +58,8 @@ public class FIndtheAnangrams_returnStartingIndex {
             {
                 sIndex.add(i-m);
             }
-            cwindow[s.charAt(i)]++;
-            cwindow[s.charAt(i-m)]--;
+            cwindow[s.charAt(i)-'a']++;
+            cwindow[s.charAt(i-m)-'a']--;
         }
         if(Arrays.equals(cwindow,pwindow))
         {
