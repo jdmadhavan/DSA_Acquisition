@@ -1,10 +1,6 @@
 package slidingWindow;
 
 import org.testng.annotations.Test;
-
-import java.util.Arrays;
-import java.util.HashMap;
-
 public class NoOFStringContainsAllThreeChar {
 
     /*
