@@ -44,6 +44,16 @@ public class FindLongestSubstring {
     }
 
     @Test
+    public void testTh()
+    {
+        String s="YazaAay";
+        int longestSubstringCount = findLongestSubstring(s);
+        System.out.println(longestSubstringCount);
+
+    }
+
+
+    @Test
     public void testThree()
     {
         String s="pwwkew";

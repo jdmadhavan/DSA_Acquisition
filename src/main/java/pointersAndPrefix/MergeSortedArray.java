@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
-public class MergeSortedArray {
+public class  MergeSortedArray {
 
     @Test
     public void mergeArray()
@@ -13,6 +13,18 @@ public class MergeSortedArray {
         int m=3;
         int[] nums2={2,5,6};
         int n=3;
+        merge(nums1,m,nums2,n);
+
+        System.out.println(Arrays.toString(nums1));
+
+    }
+    @Test
+    public void mergeArray1()
+    {
+        int[] nums1={0};
+        int m=1;
+        int[] nums2={2};
+        int n=1;
         merge(nums1,m,nums2,n);
 
         System.out.println(Arrays.toString(nums1));
